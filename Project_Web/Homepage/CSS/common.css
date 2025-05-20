@@ -1,0 +1,210 @@
+/*==================== Font Zone ====================*/
+
+@font-face {
+  font-family: jetbrainmono;
+  src: url(/Asset/Font/JetBrainsMono-Regular.ttf);
+}
+
+@font-face {
+  font-family: barlow;
+  src: url(/Asset/Font/Barlow-Regular.ttf);
+}
+
+@font-face {
+  font-family: barlowbold;
+  src: url(/Asset/Font/Barlow-Bold.ttf);
+}
+
+@font-face {
+  font-family: rajdhaniMedium;
+  src: url(/Asset/Font/Rajdhani-Medium.ttf);
+}
+
+@font-face {
+  font-family: rajdhaniBold;
+  src: url(/Asset/Font/Rajdhani-Bold.ttf);
+}
+
+@font-face {
+  font-family: rajdhani;
+  src: url(/Asset/Font/Rajdhani-Regular.ttf);
+}
+/*=================== Background Zone ====================*/
+ * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; 
+  color:white;
+}
+
+.main-wrapper {
+  display: block;
+  width: 100%;
+  background-color: black;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  background-color: black;
+}
+
+body {
+  overflow-x: hidden;
+  
+}
+
+.BG-section {
+  height: 100%;              
+  width: 100%;               
+  background-size: cover;     
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  z-index: 990;
+}
+.section1 {
+  background-image: url('/Asset/Image/Background/readyornot-bg1.png');
+  transform: translateX(7%);
+  opacity: 0;
+  animation: slideFadeIn 1.5s ease-out forwards;
+  width: 100vw;
+  height: 100vh;
+ 
+
+  
+
+}
+@keyframes slideFadeIn {
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.section2 {
+  background-image: url('/Asset/Image/Background/readyornot-bg2.jpg');              
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+}
+
+.content-section2 {
+    background-image:
+    linear-gradient(to top, rgba(10, 10, 10, 0.9), transparent 20%), 
+    linear-gradient(to bottom, rgba(10, 10, 10, 0.9), transparent 20%); 
+    
+}
+
+.section2-image1 {
+  background-image: url('/Asset/Image/Background/section-2-bg-1.webp');
+  position: relative;
+ 
+}
+
+.section2-image2 {
+  background-image: url('/Asset/Image/Background/section-2-bg-2.webp');
+  position: relative;
+}
+
+.section2-image3 {
+  background-image: url('/Asset/Image/Background/section-2-bg-3.webp');
+  position: relative;
+}
+
+.section3 {
+  background-image: url('/Asset/Image/Background/readyornot-bg3.jpg');
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  
+}
+
+.content-section3 {
+  background-image:
+    linear-gradient(to top, rgba(0, 0, 0, 0.9), transparent 20%), 
+    linear-gradient(to bottom, rgba(10, 10, 10, 0.9), transparent 20%); 
+}
+
+.content-careers {
+  background-image: url(/Asset/Image/Background/careers-bg\ \(1\).svg);
+  position: relative;
+  width: 1088px;
+  height: 100%;
+  background-repeat: no-repeat;
+}
+
+
+
+#cursor-crosshair {
+   cursor: url('/Asset/Image/Icon/cursor-crosshair.svg'), auto;
+}
+
+/*=================== Navigation Zone ===================*/
+.navigation {
+  position: fixed;
+  top: 0;
+  height: 80px;
+  width: 100%;
+  background-color: rgb(10, 10, 10, 0.95);
+  z-index: 999;
+  padding: 0.3em;
+}
+
+.content-navigation {
+    top: 0;
+    width: 92%;
+    display: flex;
+    justify-content: end;
+    color: white;
+    margin: 0.8em;  
+}
+
+.navigation ul {
+  list-style: none;
+  display: flex;
+  justify-content: end;
+  gap: 1.5rem;
+  align-items: center;
+}
+
+.navigation .void-logo-navigation {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+
+
+.navigation-menu {
+    list-style-type: none;
+    font-size: 16.3px;
+    font-weight: 100;
+    line-height: 20px;
+    font-family: "rajdhaniMedium", sans-serif;
+    font-stretch: expanded;
+    transform: scaleX(1);
+    letter-spacing: -0.2px;
+}
+
+.navigation-menu a {
+  text-decoration: none;
+}
+
+.void-logo-navigation img{
+  margin-left: 40px;
+}
+/*=============== Hover zone ===================*/
+.content-navigation ul li a:hover{
+  color: #cd3737;
+  transition: color 0.4s ease-out;
+}
+
+.void-logo-navigation:hover img {
+  opacity: 0.7;
+  transition: opacity 0.2s ease-out;
+}
+
+
+/*=========== Responesive ============*/
+
+
